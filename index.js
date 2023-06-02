@@ -8,11 +8,9 @@ const port = 3001;
 app.use(cors());
 app.use(express.json());
 
-app.get('/s',(req,res)=>{
+app.get('/',(req,res)=>{
   res.send("Cobra Price API")
 })
-
-const API_KEY = 'OMXeZOOP8ILm46EpJmjgbo7znEAJ37qgWrzkYXTIpcfieDb8hw7V92qluudZ47E0'
 
 app.get("/tokenPrice", async (req, res) => {
 
